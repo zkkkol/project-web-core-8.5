@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CPS</title>
+  </head>
+  <body>
+    <section>
+      <h1 class="brand-carousel__title">Ремонт техники различных брендов</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="logo/lenovo.svg" alt="lenovo" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="logo/samsung.svg" alt="samsung" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="logo/apple.svg" alt="apple" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="logo/viewsonic.svg" alt="viewsonic" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="logo/bosch.svg" alt="bosch" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="logo/hp.svg" alt="hp" /><img src="logo/go.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="logo/acer.svg" alt="acer" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="logo/sony.svg" alt="sony" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="logo/lenovo.svg" alt="lenovo" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="logo/samsung.svg" alt="samsung" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="logo/apple.svg" alt="apple" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
