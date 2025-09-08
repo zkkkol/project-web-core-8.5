@@ -52,7 +52,7 @@ body {
   background-color: #ffffff;
 }
 .list-wrapper {
-  max-height: 180px;
+  max-height: 270px;
   overflow: hidden;
   margin: 40px 16px 16px;
   display: grid;
