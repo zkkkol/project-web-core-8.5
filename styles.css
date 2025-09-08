@@ -52,12 +52,15 @@ body {
   background-color: #ffffff;
 }
 .list-wrapper {
+  max-height: 180px;
+  overflow: hidden;
   margin: 40px 16px 16px;
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 30px;
 }
 #myBtn {
+  text-align: center;
   border: none;
   font-family: TTlakesLight;
   background-color: transparent;
@@ -65,6 +68,9 @@ body {
   line-height: 20px;
   padding: 20px;
   display: block;
+}
+.arrow {
+  padding: 0 8px 2px 0;
 }
 :root {
   --swiper-theme-color: #b5b6bc;
@@ -90,7 +96,7 @@ body {
   .brand-carousel {
     display: none;
   }
-  .brand-list {
+  .list-wrapper {
     display: grid;
     grid-template-columns: auto auto auto auto;
   }

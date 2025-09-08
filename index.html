@@ -11,8 +11,8 @@
     <title>CPS</title>
   </head>
   <body>
+    <h1 class="brand-carousel__title">Ремонт техники различных брендов</h1>
     <section class="brand-carousel">
-      <h1 class="brand-carousel__title">Ремонт техники различных брендов</h1>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -83,9 +83,8 @@
       </div>
     </section>
     <section class="brand-list">
-      <h1 class="brand-list__title">Ремонт техники различных брендов</h1>
       <div class="brand-showmore">
-        <div class="list-wrapper">
+        <div class="list-wrapper" id="list-wrapper">
           <div class="list-slide">
             <img src="logo/lenovo.svg" alt="lenovo" /><img
               src="logo/go.svg"
@@ -131,29 +130,27 @@
               alt=""
             />
           </div>
-          <div id="more">
-            <div class="list-slide">
-              <img src="logo/lenovo.svg" alt="lenovo" /><img
-                src="logo/go.svg"
-                alt=""
-              />
-            </div>
-            <div class="list-slide">
-              <img src="logo/samsung.svg" alt="samsung" /><img
-                src="logo/go.svg"
-                alt=""
-              />
-            </div>
-            <div class="list-slide">
-              <img src="logo/apple.svg" alt="apple" /><img
-                src="logo/go.svg"
-                alt=""
-              />
-            </div>
+          <div class="list-slide">
+            <img src="logo/lenovo.svg" alt="lenovo" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="list-slide">
+            <img src="logo/samsung.svg" alt="samsung" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="list-slide">
+            <img src="logo/apple.svg" alt="apple" /><img
+              src="logo/go.svg"
+              alt=""
+            />
           </div>
         </div>
         <button onclick="myFunction()" id="myBtn">
-          <img src="logo/icon.svg" alt="" />Показать все
+          <img src="logo/icon.svg" alt="" class="arrow" /> Показать все
         </button>
       </div>
     </section>
@@ -171,15 +168,17 @@
     </script>
     <script>
       function myFunction() {
-        var moreText = document.getElementById("more");
+        var moreText = document.getElementById("list-wrapper");
         var btnText = document.getElementById("myBtn");
 
-        if (moreText.style.display === "none") {
-          moreText.style.display = "block";
-          btnText.innerHTML = "Скрыть";
+        if (moreText.style.maxHeight === "180px") {
+          moreText.style.maxHeight = "600px";
+          btnText.innerHTML =
+            '<img src="logo/iconRot.svg" alt="" class="arrow"/> Скрыть';
         } else {
-          moreText.style.display = "none";
-          btnText.innerHTML = "Показать все";
+          moreText.style.maxHeight = "180px";
+          btnText.innerHTML =
+            '<img src="logo/icon.svg" alt="" class="arrow"/> Показать все';
         }
       }
     </script>
