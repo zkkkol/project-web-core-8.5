@@ -11,7 +11,7 @@
     <title>CPS</title>
   </head>
   <body>
-    <section>
+    <section class="brand-carousel">
       <h1 class="brand-carousel__title">Ремонт техники различных брендов</h1>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
@@ -82,6 +82,79 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+    <section class="brand-list">
+      <h1 class="brand-list__title">Ремонт техники различных брендов</h1>
+      <div class="brand-showmore">
+        <div class="list-wrapper">
+          <div class="list-slide">
+            <img src="logo/lenovo.svg" alt="lenovo" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="list-slide">
+            <img src="logo/samsung.svg" alt="samsung" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="list-slide">
+            <img src="logo/apple.svg" alt="apple" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="list-slide">
+            <img src="logo/viewsonic.svg" alt="viewsonic" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="list-slide">
+            <img src="logo/bosch.svg" alt="bosch" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="list-slide">
+            <img src="logo/hp.svg" alt="hp" /><img src="logo/go.svg" alt="" />
+          </div>
+          <div class="list-slide">
+            <img src="logo/acer.svg" alt="acer" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div class="list-slide">
+            <img src="logo/sony.svg" alt="sony" /><img
+              src="logo/go.svg"
+              alt=""
+            />
+          </div>
+          <div id="more">
+            <div class="list-slide">
+              <img src="logo/lenovo.svg" alt="lenovo" /><img
+                src="logo/go.svg"
+                alt=""
+              />
+            </div>
+            <div class="list-slide">
+              <img src="logo/samsung.svg" alt="samsung" /><img
+                src="logo/go.svg"
+                alt=""
+              />
+            </div>
+            <div class="list-slide">
+              <img src="logo/apple.svg" alt="apple" /><img
+                src="logo/go.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <button onclick="myFunction()" id="myBtn">Показать все</button>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -93,6 +166,20 @@
           clickable: true,
         },
       });
+    </script>
+    <script>
+      function myFunction() {
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (moreText.style.display === "none") {
+          moreText.style.display = "block";
+          btnText.innerHTML = "Скрыть";
+        } else {
+          moreText.style.display = "none";
+          btnText.innerHTML = "Показать все";
+        }
+      }
     </script>
   </body>
 </html>

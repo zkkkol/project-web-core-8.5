@@ -2,6 +2,12 @@
   font-family: TTlakesLight;
   src: url(fonts/TTLakes-ExtraLight.ttf);
 }
+#more {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 30px;
+  direction: row;
+}
 html,
 body {
   height: 100%;
@@ -13,19 +19,29 @@ body {
   color: #7e7e82;
   min-width: 320px;
 }
-.brand-carousel__title {
+.brand-carousel__title,
+.brand-list__title {
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 24px;
   margin: 0;
   padding: 20px 16px;
 }
-.swiper-wrapper {
+.swiper-wrapper,
+.list-wrapper {
   padding: 0 16px 20px 16px;
   margin: 0 0 16px;
   box-shadow: inset -5px 0 5px white;
 }
-.swiper-slide {
+.list-wrapper {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  padding-bottom: 16px;
+}
+.swiper-slide,
+.list-slide {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,7 +52,45 @@ body {
   padding: 0 16px;
   background-color: #ffffff;
 }
+.brand-showmore {
+  position: relative;
+}
+#myBtn {
+  display: flex;
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  line-height: 20px;
+  padding: 0;
+  display: block;
+}
 :root {
   --swiper-theme-color: #b5b6bc;
   --swiper-pagination-bullet-inactive-color: #dddddd;
+}
+@media screen and (max-width: 768px) {
+  .brand-carousel {
+    display: inline;
+  }
+  .brand-list {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .brand-carousel {
+    display: none;
+  }
+  .brand-list {
+    display: block;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .brand-carousel {
+    display: none;
+  }
+  .brand-list {
+    display: block;
+    grid-template-columns: auto auto auto auto;
+  }
 }
