@@ -22,23 +22,22 @@ body {
 .brand-carousel__title,
 .brand-list__title {
   font-weight: 500;
+  height: 30px;
   font-size: 1.25rem;
   line-height: 24px;
   margin: 0;
   padding: 20px 16px;
 }
-.swiper-wrapper,
-.list-wrapper {
+.swiper-wrapper {
   padding: 0 16px 20px 16px;
   margin: 0 0 16px;
   box-shadow: inset -5px 0 5px white;
 }
 .list-wrapper {
   justify-content: center;
-  display: grid;
-  grid-template-columns: auto auto auto;
   gap: 30px;
   padding-bottom: 16px;
+  margin: 0 16px 16px;
 }
 .swiper-slide,
 .list-slide {
@@ -52,17 +51,19 @@ body {
   padding: 0 16px;
   background-color: #ffffff;
 }
-.brand-showmore {
-  position: relative;
+.list-wrapper {
+  margin: 40px 16px 16px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
 }
 #myBtn {
-  display: flex;
-  position: absolute;
   border: none;
+  font-family: TTlakesLight;
   background-color: transparent;
   font-size: 1rem;
   line-height: 20px;
-  padding: 0;
+  padding: 20px;
   display: block;
 }
 :root {
@@ -82,7 +83,7 @@ body {
     display: none;
   }
   .brand-list {
-    display: block;
+    display: grid;
   }
 }
 @media screen and (min-width: 1120px) {
@@ -90,7 +91,7 @@ body {
     display: none;
   }
   .brand-list {
-    display: block;
+    display: grid;
     grid-template-columns: auto auto auto auto;
   }
 }
